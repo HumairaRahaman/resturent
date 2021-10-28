@@ -32,7 +32,7 @@ html {
 }
 /* header starts */
 header {
-  background: #24a19c;
+  background: #111313;
   padding: 0% 1%;
   text-align: center;
 }
@@ -64,6 +64,152 @@ nav ul li a:hover {
   background-color: rgba(0, 0, 0, 0.5);
 }
 /* header ends */
+/* banner starts */
+.banner-section {
+  background-image: url(../images/bg.jpg);
+  height: 100%;
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+.banner-contents {
+  padding: 50px 10px;
+  text-align: center;
+}
+.banner-contents h1 {
+  width: 100%;
+  margin: 15px auto;
+  font-size: 3rem;
+  background: rgba(255, 255, 0, 0.885);
+  border-radius: 5px;
+  padding: 15px;
+  font-family: "Handlee", cursive;
+}
+.banner-contents p {
+  width: 300px;
+  margin: 15px auto;
+  font-size: 1.2rem;
+  background: rgb(0, 128, 0);
+  color: white;
+  padding: 10px;
+  border-radius: 3px;
+}
+.btn {
+  width: 160px;
+  padding: 10px;
+  background: rgb(0, 128, 0);
+  border: none;
+  border-radius: 5px;
+  color: white;
+  transition: 0.4s;
+  text-transform: uppercase;
+  font-size: 1rem;
+}
+.btn:hover {
+  transform: scale(1.2);
+}
+/* banner ends */
+/* about starts */
+.about-us {
+  padding: 1%;
+}
+.about-us-content {
+  text-align: center;
+}
+.about-us-content h3 {
+  font-size: 2rem;
+  font-weight: bolder;
+  margin-bottom: 10px;
+}
+.about-us-content p {
+  font-size: 0.8rem;
+  margin-bottom: 10px;
+}
+/* about ends */
+/* food menu starts */
+.food-menu {
+  padding: 1%;
+}
+.card-body {
+  text-align: center;
+}
+.card-body img {
+  max-width: 100%;
+  height: 330px;
+  display: block;
+}
+.card-des {
+  background: rgb(164, 165, 164);
+}
+.item-name {
+  background: rgb(0, 128, 0);
+  color: white;
+  padding: 10px;
+}
+.card-des > p {
+  padding: 10px;
+  font-weight: bold;
+  font-size: 0.8rem;
+}
+.card {
+  transition: 0.4s;
+}
+.card:hover {
+  transform: scale(1.1);
+}
+/* food menu ends */
+/* contact starts */
+.contact {
+  padding: 1%;
+  background: #595b83;
+}
+.contact-details {
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+}
+.map {
+  width: 100%;
+  height: 250px;
+}
+.contact-details p,
+address {
+  font-size: 0.8rem;
+}
+/* contact ends */
+/* footer starts */
+footer {
+  padding: 1%;
+  background: #060930;
+  color: white;
+}
+footer p {
+  text-align: center;
+  font-size: 0.8rem;
+  line-height: 32px;
+}
+.socilal-icon {
+  text-align: center;
+}
+.style-icon {
+  color: white;
+  width: 32px;
+  height: 32px;
+  line-height: 32px;
+  border-radius: 50%;
+  border: 1px solid white;
+  margin: 0 10px;
+  text-align: center;
+  transition: 0.4s;
+}
+.style-icon:hover {
+  background: gray;
+  transform: scale(1.2);
+}
+/* footer ends */
+
 /* small device  */
 
 @media (min-width: 576px) {
@@ -147,6 +293,53 @@ nav ul li a:hover {
 
 /* large device  */
 @media (min-width: 992px) {
+  .logo-div {
+    text-align: left;
+  }
+  nav ul {
+    text-align: right;
+  }
+  nav ul li {
+    display: inline-block;
+  }
+  nav ul li a {
+    display: inline-block;
+    transition: 0.4s;
+  }
+  /* banner stats */
+  .banner-section {
+    position: relative;
+    height: 100vh;
+  }
+  .banner-contents {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .banner-contents h1 {
+    width: 700px;
+    font-size: 3.5rem;
+  }
+  .banner-contents p {
+    width: 500px;
+    font-size: 2rem;
+  }
+  /* banner ends */
+  nav ul li a:hover {
+    background: transparent;
+    border-radius: 0;
+    text-decoration: underline;
+    transform: scale(1.2);
+  }
+  /* footer starts */
+  footer p {
+    text-align: left;
+  }
+  .socilal-icon {
+    text-align: right;
+  }
+  /* footer ends */
   .col-lg-1 {
     width: 8.33%;
   }
